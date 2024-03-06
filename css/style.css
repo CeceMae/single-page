@@ -1,0 +1,286 @@
+body {
+    background-color: #db7d23;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 65px;
+}
+
+.tm-site-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font: bold;
+}
+
+
+.header-container {
+    position: relative;
+    max-width: 1280px;
+    max-height: 640px;
+    overflow-y: hidden;
+}
+
+
+.photo {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 80vh;
+    z-index: -100;
+    background-color: black;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.text {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    font-size: 2.2rem;
+}
+
+.ccs_desc{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 55px;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.text-gray {
+    color: #CCCCCC;
+}
+
+.tm-text-white {
+    color: #FFFFFF;
+}
+
+
+.text-orange {
+    color: #db7d23;
+}
+
+hr {
+    border-color: #666666;
+    max-width: 70%;
+}
+
+
+.description {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 35px 40px;
+    max-width: 712px;
+    background-color: #262626;
+}
+
+.section {
+    margin-bottom: 85px;
+}
+
+.section-low {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.column-left{
+    float: left;
+    width: 30%;
+    margin-left: 150px;
+}
+
+.column-right{
+    float: right;
+    width: 40%;  margin-right: 140px;
+
+}
+.column-left2{
+    float: left;
+    width: 40%;
+    margin-left: 150px;
+    text-align: right;
+}
+
+.column-right2{
+    float: right;
+    width: 30%;  margin-right: 100px;
+
+}
+
+.content-section:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 45px;
+
+}
+.faculty {
+    height: 250px;
+}
+.faculty-left{
+    float: left;
+    width: 50%;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 500000px;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 20px auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 550px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.faculty-right{
+    float: right;
+    width: 50%; 
+
+}
+.faculty-section:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 45px;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+iframe {
+    max-width: 100%;
+}
+
+#google-map {
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+}
+
+p {
+    line-height: 1.9;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1310px;
+    }
+    .tm-container-2 {
+        max-width: 1170px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tm-video-container {
+        max-width: 932px;
+        max-height: 466px;
+    }
+}
+
+@media (max-width: 991px) {
+    #google-map,
+    .tm-contact-form {
+        max-width: 100%;
+    }
+    .google-map-iframe {
+        width: 100%;
+    }
+    .tm-video-container {
+        max-width: 690px;
+        max-height: 345px;
+	}
+    .tm-timeline-item {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tm-timeline-item {
+        margin-left: 0;
+    }
+    .tm-video-container {
+        max-width: 510px;
+        max-height: 255px;
+    }
+}
+
+@media (max-width: 584px) {
+    .tm-timeline-item-inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tm-video-container {
+        overflow-x: hidden;
+    }
+
+}
