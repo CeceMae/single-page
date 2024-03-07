@@ -3,8 +3,6 @@ body {
     color: #FFFFFF;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 300;
-
-
 }
 
 h1,
@@ -20,44 +18,36 @@ h3 {
     font-size: 1.3rem;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-top: 65px;
-}
-
-.tm-site-title {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 0;
-}
-
-.header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 0;
-    font: bold;
-}
-
-
-.header-container {
+/* Container holding the image and the text */
+.container {
     position: relative;
-    max-width: 1280px;
-    max-height: 640px;
-    overflow-y: hidden;
 }
 
+.building{
+    width: 100%;
+    height: 97vh;
+  
+}
+.building2{
+   display: none;
+   width: 100%;
+    height: 97vh;
+}
 
-.photo {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: 80vh;
-    z-index: -100;
-    background-color: black;
-    background-size: cover;
-    transition: 1s opacity;
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #262626;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
 }
 
 .text {
@@ -113,6 +103,16 @@ hr {
     margin-bottom: 50px;
 }
 
+.members{
+    background-color: #262626;
+    padding-top: 65px;
+    margin-top: 65px;
+}
+
+
+.content-section2{
+    display: none;
+}
 
 .column-left{
     float: left;
@@ -135,7 +135,15 @@ hr {
 .column-right2{
     float: right;
     width: 30%;  margin-right: 100px;
+}
 
+.faculty_btn{
+    margin-top: -100px;
+    padding-bottom: 59px;
+}
+
+.line{
+    display: none;
 }
 
 .content-section:after {
@@ -143,8 +151,13 @@ hr {
   display: table;
   clear: both;
   margin-bottom: 45px;
-
 }
+
+.faculty2{
+    display: none;
+    height: 250px
+}
+
 .faculty {
     height: 250px;
 }
@@ -171,11 +184,11 @@ hr {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 20px auto; /* 15% from the top and centered */
+    margin: 30px auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    height: 550px;
+    height: 500px;
   }
   
   /* The Close Button */
@@ -222,65 +235,41 @@ p {
     line-height: 1.9;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1310px;
-    }
-    .tm-container-2 {
-        max-width: 1170px;
-    }
-}
 
-@media (max-width: 1199px) {
-    .tm-video-container {
-        max-width: 932px;
-        max-height: 466px;
+@media (max-width: 1160px) {
+    .building {
+        display: none;
     }
-}
+    .building2{
+        display: block;
+    }
+    .content-section {
+        display: none;
+    }
 
-@media (max-width: 991px) {
-    #google-map,
-    .tm-contact-form {
+    .content-section2{
+        display: block;
+        text-align: center;
+    }
+    .faculty_btn{
+        margin-top: auto;
+    }
+    .line{
+        padding-top: -100px;
+    }
+
+    #google-map{
         max-width: 100%;
     }
     .google-map-iframe {
         width: 100%;
     }
-    .tm-video-container {
-        max-width: 690px;
-        max-height: 345px;
-	}
-    .tm-timeline-item {
-        margin-left: 25px;
-    }
 }
 
-@media (max-width: 767px) {
-    .tm-timeline-item {
-        margin-left: 0;
-    }
-    .tm-video-container {
-        max-width: 510px;
-        max-height: 255px;
-    }
-}
-
-@media (max-width: 584px) {
-    .tm-timeline-item-inner {
-        flex-direction: column;
-    }
-}
-
+/*
 @media (max-width: 575px) {
     .container {
         max-width: 540px;
     }
 }
-
-
-@media (max-width: 480px) {
-    .tm-video-container {
-        overflow-x: hidden;
-    }
-
-}
+*/
